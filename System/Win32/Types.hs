@@ -26,6 +26,7 @@ import Foreign.C
 import Control.Exception
 import System.IO.Error
 import System.IO.Unsafe
+import {-# SOURCE #-} System.Win32.Console (getCurrentCodePage)
 import Data.Char
 import Numeric (showHex)
 
