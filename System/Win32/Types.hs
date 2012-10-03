@@ -340,7 +340,7 @@ foreign import ccall unsafe "HsWin32.h prim_PRIMARYLANGID"
 foreign import ccall unsafe "HsWin32.h prim_SUBLANGID"
   sUBLANGID :: LANGID -> SubLANGID
 
-foreign import stdcall "WideCharToMultiByte"
+foreign import WINDOWS_CCONV "WideCharToMultiByte"
   wideCharToMultiByte
         :: CodePage
         -> DWORD   -- dwFlags,
